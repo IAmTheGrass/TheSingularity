@@ -1,0 +1,19 @@
+<p> Index Code </p>
+<table>
+	<thead>
+		<tr>
+        <th>TXT</th>
+        <th>Cost</th>
+        <th>Description</th>
+      	</tr>
+    </thead>
+    <tbody>
+    	<% @codes.each do |code| %>
+		<tr>
+    	<td><%= code.txt %></td>
+    	<td><%= code.cost %></td>
+    	<td class="testme" id = "<%= code.id %>" ><%= code.description %></td>
+  		</tr>
+		<% end %>
+    </tbody>
+</table>

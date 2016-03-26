@@ -1,0 +1,16 @@
+<%= form_for @aquisition,remote: true do |f| %>
+
+<%= f.label :ai_id, class: "control-label" %>
+<%= f.collection_select(:ai_id, Ai.all, :id, :name, promt: true) %>
+<br>
+<%= f.label :exploit_id, class: "control-label" %>
+<%= f.collection_select(:exploit_id, Exploit.all, :id, :name, promt: true) %>
+<br>
+<%= f.label :cost, class: "control-label" %>
+<%= f.number_field :cost, class: "form-control" %>
+<br>
+<%= f.label :transnum, class: "control-label" %>
+<%= f.number_field :transnum, class: "form-control" %>
+<br>
+<%= f.submit class: "btn btn-primary" %>
+<% end %>

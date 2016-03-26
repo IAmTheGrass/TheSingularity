@@ -1,0 +1,19 @@
+<p> Index Aquisition </p>
+<table>
+	<thead>
+		<tr>
+        <th>AI</th>
+        <th>Exploite</th>
+        <th>Cost</th>
+      	</tr>
+    </thead>
+    <tbody>
+    	<% @aquisitions.each do |aq| %>
+		<tr>
+    	<td class="testme" id = "<%= aq.id %>" ><%= aq.ai_id %></td>
+    	<td><%= aq.exploit_id %></td>
+    	<td><%= aq.cost %></td>
+  		</tr>
+		<% end %>
+    </tbody>
+</table>

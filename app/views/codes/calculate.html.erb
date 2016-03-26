@@ -1,0 +1,8 @@
+<p> Calc Code </p>
+
+<p> <%= @code.description %> </p>
+<p> Total # of exploits with this code <%= @code.exploits.each.count %> </p>
+
+<% @code.exploits.each do |exVar| %>
+<p> Name of Exploit that contains Code <%= exVar.name %> </p>
+<% end %>

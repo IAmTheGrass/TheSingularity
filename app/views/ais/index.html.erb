@@ -1,0 +1,21 @@
+<p> index </p>
+
+<table >
+
+	<thead>
+		<tr>
+        <th>Name</th>
+        <th>ID</th>
+      	</tr>
+    </thead>
+
+    <tbody>
+    	<% @ais.each do |ai| %>
+		<tr>
+    	<td  class="testme" id = "<%= ai.id %>" ><%= ai.name %></td>
+    	<td><%= ai.id %></td>
+  		</tr>
+		<% end %>
+    </tbody>
+
+</table>

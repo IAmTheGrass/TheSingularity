@@ -1,0 +1,2 @@
+module AquisitionsHelper
+end

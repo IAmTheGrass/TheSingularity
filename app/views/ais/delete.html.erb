@@ -1,0 +1,6 @@
+<p> Delete Ai </p>
+
+Are you sure you wish to delete <b><%= @ai.name %></b>?
+<div>
+    <%= link_to "Yes, Delete This Ai", ai_path(@ai), method: :delete, remote: true %>
+</div>
