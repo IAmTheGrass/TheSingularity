@@ -5,4 +5,5 @@ class Code < ActiveRecord::Base
 
 	has_many :exploits
 	has_many :aquisitions, through: :exploits
+	has_many :ais, through: :aquisitions
 end

@@ -1,0 +1,22 @@
+<p> Codes Mass Calculate </p>
+
+<% @totalEx = 0 %>
+<% @totalAq = 0 %>
+<% @valueCo = 0 %>
+<% @valueAq = 0 %>
+
+<% @codes.each do |co| %>
+<% co.exploits.each do |ex| %>
+<% @totalEx = @totalEx + 1 %>
+<% ex.aquisitions.each do |aq| %>
+<% @totalAq = @totalAq + 1 %>
+<% @valueAq = @valueAq + aq.cost %>
+<% aq.ai.name %>
+<% end %>
+<% end %>
+<% @valueCo = @valueCo + co.cost %>
+<% end %>
+<p> Total # of codes <%= @codes.count %></p>
+<p> Total $ value of all codes <%= @valueCo %> </p>
+<p> Total # of Exploits from all codes <%= @totalEx %> </p>
+<p> Total $ value of Aquisitions form all codes <%= @valueAq %> </p>

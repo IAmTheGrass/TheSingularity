@@ -1,0 +1,14 @@
+<p> Aquisitions Mass Calculate </p>
+
+<% @valueAq = 0 %>
+<% @valueCo = 0 %>
+
+<% @aquisitions.each do |aq| %>
+<% @valueAq = @valueAq + aq.cost %>
+<% @valueCo = @valueCo + aq.exploit.code.cost %>
+<% aq.ai.name %>
+<% aq.exploit.name %>
+<% end %>
+<p> Total # of Aquisitions <%= @aquisitions.count %> </p>
+<p> Total $ value of all Aquisitions <%= @valueAq %> </p>
+<p> Total $ value of code appearing in all Aquisitions <%= @valueCo %> </p>

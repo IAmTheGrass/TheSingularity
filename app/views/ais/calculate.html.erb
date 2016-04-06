@@ -1,4 +1,6 @@
 <p> Calc Ai </p>
 
-<p> <%= @ai.name %> </p>
-<p> Total # of Aquisitions <%= @ai.aquisitions.each.count %> </p>
+<p> Name: <%= @ai.name %> </p>
+<p> Total # of Aquisitions: <%= @ai.aquisitions.count %> </p>
+<p> Total # of Exploits: <%= @ai.exploits.count %> </p>
+<p> Total # of Codes: <%= @ai.exploits.first.name %> </p>

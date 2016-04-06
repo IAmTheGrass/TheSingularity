@@ -1,6 +1,6 @@
 class Aquisition < ActiveRecord::Base
-	validates :ai, :presence => true
-	validates :exploite, :presence => true
+	validates :ai_id, :presence => true
+	validates :exploit_id, :presence => true
 	validates :cost, :presence => true, :numericality => true
 	validates :transnum, :presence => true, :uniqueness => true
 

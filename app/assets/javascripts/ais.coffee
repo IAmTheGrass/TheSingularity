@@ -1,3 +1,1 @@
-jQuery ->
-
-    $( ".testme" ).draggable();
+    

@@ -1,9 +1,13 @@
+body {
+    background-color:#0066ff;
+}
+
 #ais {
 	background-color:#e60000;
     width: 150px;
     height: 50px;
 	float: left;
-	border: 10px solid #0000e6;
+	border: 10px solid #000000;
 	text-align: center;
 }
 
@@ -13,13 +17,14 @@
     height: 50px;
     float: left;
     clear: left;
-    border: 10px solid #0000e6;
+    border: 10px solid #000000;
     text-align: center;
 }
 
 .testme {
-    background-color:#ff00ff;
-    border: 10px solid #66ff33;
+    background-color:#6600cc;
+    border: 10px solid #000000;
+    min-width: 100px;
 }
 
 #codes {
@@ -28,7 +33,7 @@
    	height: 50px;
    	float: left;
    	clear: left;
-   	border: 10px solid #0000e6;
+   	border: 10px solid #000000;
    	text-align: center;
 }
 
@@ -38,7 +43,7 @@
     height: 50px;
     float: left;
     clear: left;
-    border: 10px solid #0000e6;
+    border: 10px solid #000000;
     text-align: center;
 }
 
@@ -49,7 +54,7 @@
     float: right;
     position: relative;
     top: -210px;
-    border: 10px solid #ff00ff;
+    border: 10px solid #000000;
     text-align: center;
 }
 
@@ -61,22 +66,24 @@
     clear: right;
     position: relative;
     top: -210px;
-    border: 10px solid #ff00ff;
+    border: 10px solid #6600cc;
     text-align: center;
 }
 
 #Update {
 	background-color:#66ff33;
-	min-width: 170px;
-    min-height: 70px;
+	min-width: 150px;
+    min-height: 50px;
     float: right;
     clear: right;
     position: relative;
     top: -210px;
+    border: 10px solid #6600cc;
     text-align: center;
+
 }
 
-#Destroy {
+#drop {
 	background-color:#66ff33;
 	min-width: 150px;
     min-height: 50px;
@@ -84,24 +91,24 @@
     clear: right;
     position: relative;
     top: -210px;
-    border: 10px solid #ff00ff;
+    border: 10px solid #6600cc;
     text-align: center;
 }
 
 #calculate {
-	background-color:#e6e600;
+	background-color:#66ff33;
 	min-width: 150px;
     min-height: 50px;
     float: right;
     clear: right;
     position: relative;
     top: -210px;
-    border: 10px solid #ff00ff;
+    border: 10px solid #6600cc;
     text-align: center;
 }
 
 #ObjectLand {
-	background-color:#0000e6;
+	background-color:#e60000;
 	width: 180px;
     height: 80px;
     margin-left:auto;
@@ -110,7 +117,7 @@
 }
 
 #Action {
-	background-color:#ff00ff;
+	background-color:#66ff33;
 	width: 180px;
     height: 80px;
     margin-left:auto;
@@ -127,6 +134,7 @@
     margin-left:auto;
     margin-right:auto;
     text-align: center;
+    border: 3px solid #000099;
 }
 
 #TestLog {
@@ -135,5 +143,54 @@
     min-height: 300px;
     margin-left:auto;
     margin-right:auto;
+    text-align: center;
+    border: 3px solid #000099;
+}
+
+#legend {
+    border: 3px solid #000099;
+    margin-left:auto;
+    margin-right:auto;
+    max-height: 160px;
+    max-width: 900px;
+    text-align: center;
+}
+
+#legendex1 {
+    background-color:#ffffcc;
+    width: 180px;
+    height: 80px;
+    text-align: center;
+}
+
+#legendex2 {
+    background-color:#ccffff;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: -75px;
+    left: 13px;
+    text-align: center;
+}
+
+#legendex3 {
+    background-color:#ffffcc;
+    width: 180px;
+    height: 80px;
+    position: relative;
+    top: -162px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+#legendex4 {
+    background-color:#ffffcc;
+    width: 162px;
+    height: 62px;
+    position: relative;
+    top: -244px;
+    margin-left:auto;
+    border: 10px solid #000000;
     text-align: center;
 }

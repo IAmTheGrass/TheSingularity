@@ -21,7 +21,6 @@ class AquisitionsController < ApplicationController
 	end
 
 	def update
-    	@aquisitions = Aquisition.all
     	@aquisition = Aquisition.find(params[:id])
     	@aquisition.update_attributes(aquisition_params)
  	end
@@ -36,13 +35,25 @@ class AquisitionsController < ApplicationController
 		@aquisition.destroy
 	end
 
+	def drop
+    	@aquisitions = Aquisition.all
+	end
+
+	def rundrop
+    	@aquisitions = Aquisition.all
+	end
+
 	def calculate
 		@aquisition = Aquisition.find(params[:aquisition_id])
 	end
 
+	def calcall
+    	@aquisitions = Aquisition.all
+	end
+
 	private
 	def aquisition_params
-		params.require(:aquisition).permit(:ai, :exploit_id, :cost, :transnum)
+		params.require(:aquisition).permit(:ai_id, :exploit_id, :cost, :transnum )
 	end
 
 end

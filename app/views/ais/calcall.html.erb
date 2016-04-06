@@ -1,0 +1,19 @@
+<p> Ais Mass Calculate </p>
+
+<% @totalAq = 0 %>
+<% @costAq = 0 %>
+<% @costCo = 0 %>
+
+<% @ais.each do |ai| %>
+<% ai.aquisitions.each do |aq| %>
+<% @totalAq = @totalAq + 1 %>
+<% @costAq = @costAq + aq.cost %>
+<% @costCo = @costCo + aq.exploit.code.cost %>
+<% aq.exploit.code.cost %>
+<% end %>
+
+<% end %>
+<p> Total # of Ais <%= @ais.count %> </p>
+<p> Total # of Aquisitions threw all AI <%= @totalAq %> </p>
+<p> Total $ vlaue of Aquisitions threw all AI <%= @costAq %> </p>
+<p> Total $ vlaue of Codes threw all AI <%= @costCo %> </p>

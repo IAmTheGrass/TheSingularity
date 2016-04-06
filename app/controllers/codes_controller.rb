@@ -37,8 +37,20 @@ class CodesController < ApplicationController
 		@code.destroy
 	end
 
+	def drop
+    	@codes = Code.all
+	end
+
+	def rundrop
+    	@codes = Code.all
+	end
+
 	def calculate
     	@code = Code.find(params[:code_id])
+	end
+
+	def calcall
+    	@codes = Code.all
 	end
 
 	private
