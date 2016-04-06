@@ -12,10 +12,10 @@ jQuery ->
     $( ".testme" ).draggable();
     $("#ObjectLand").droppable(tolerance: 'fit', accept: '.left', drop: (e,ui) -> (
     	$(this).attr("tracker", ui.draggable.attr("id"));
-    	$("#ais").offset({top:16,left:8})
-    	$("#exploits").offset({top:86,left:8})
-    	$("#codes").offset({top:156,left:8})
-    	$("#aquisitions").offset({top:226,left:8})
+    	$("#ais").offset({top:171,left:8})
+    	$("#exploits").offset({top:241,left:8})
+    	$("#codes").offset({top:311,left:8})
+    	$("#aquisitions").offset({top:381,left:8})
     	$( "#Display" ).load( $("#ObjectLand").attr("tracker") + "/" + $("#Action").attr("tracker") + ".html" );
     	e.stopPropagation();
     	ui.stopPropagation();
